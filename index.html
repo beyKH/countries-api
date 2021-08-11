@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="body d-flex flex-column h-100">
+
+  <header class="site-header py-3 shadow-sm">
+    <div class="container-lg container-made d-flex justify-content-between align-items-center">
+      <a class="site-header__logo font-weight-bold" href="index.html">Where in the world?</a>
+      <button class="site-header__toggler" type="button">
+        <span class="site-header__toggler-wrapper d-flex align-items-center">
+          <span>
+            <svg width="18" height="17" viewBox="0 0 18 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12.5532 11.815C8.66857 11.815 5.51929 8.92783 5.51929 5.36821C5.51929 4.0253 5.96679 2.78158 6.73143 1.75C3.69036 2.69515 1.5 5.33122 1.5 8.43807C1.5 12.3385 4.94929 15.5 9.20357 15.5C12.5929 15.5 15.4696 13.4932 16.5 10.7045C15.375 11.4048 14.0161 11.815 12.5532 11.815Z" stroke="#111517" stroke-width="1.25" />
+            </svg>
+          </span>
+
+          <span class="site-header__toggler-text">Dark mode</span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main class="site-content flex-grow-1 py-4 ">
+    <div class="container-lg container-made">
+
+      <!-- FORM SECTION -->
+      <section class="search-form">
+        <h2 class="sr-only">Countries</h2>
+        <form class="row d-flex justify-content-between align-items-center">
+          <div class="search-form__input-box col-12 col-sm-6 col-md-4 mb-4  mb-sm-0">
+            <svg class="search-form__search-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="search">
+                <path id="icon-search-black" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.5 11H11.7L11.4 10.7C12.4 9.6 13 8.1 13 6.5C13 2.9 10.1 0 6.5 0C2.9 0 0 2.9 0 6.5C0 10.1 2.9 13 6.5 13C8.1 13 9.6 12.4 10.7 11.4L11 11.7V12.5L16 17.5L17.5 16L12.5 11ZM6.5 11C4 11 2 9 2 6.5C2 4 4 2 6.5 2C9 2 11 4 11 6.5C11 9 9 11 6.5 11Z"
+                  fill="currentColor" />
+              </g>
+            </svg>
+            <input class="search-form_input form-control shadow-sw border-0" type="search"
+            placeholder="Search for a country…" name="country" required>
+
+          </div>
+
+          <div class="col-7 col-sm-4 col-md-3 ">
+            <select class="search-form__select form-control border-0 shadow-sm" name="region" required>
+              <option value="" disabled>Filter by Region</option>
+              <option value="africa">Africa</option>
+              <option value="america">America</option>
+              <option value="asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="Ocenia">Ocenia</option>
+            </select>
+          </div>
+        </form>
+      </section>
+
+      <!-- COUNTRY LIST -->
+      <section class="countries">
+        <h2 class="sr-only">Countries</h2>
+        <ul class="countries__list row list-unstyled align-items-stretch">
+          <li class="countries__item col-sm-6 col-md-6 col-xl-3 col-lg-3 mb-4">
+            <div class="country  position-relative shadow-sm">
+              <a class="country__link  stretched-link" href="germany.html">
+                <img class="country__img" src="img/flag-germany.png" width="264" height="160" alt="flag country">
+              </a>
+              <div class="country__inner">
+                <h3 class="country__name">Germany</h3>
+                <dl class="country__details">
+                  <div class="country__details-box">
+                    <dt>Population:  </dt>
+                    <dd> 81,770,900</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Region:  </dt>
+                    <dd>Europe</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Capital:  </dt>
+                    <dd>Berlin</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+
+          <li class="countries__item col-sm-6 col-md-6 col-xl-3 col-lg-3 mb-4">
+            <div class="country shadow-sm">
+              <a class="country__link" href="usa.html">
+                <img class="country__img" src="img/flag-us.png" width="264" height="160" alt="flag country">
+              </a>
+              <div class="country__inner">
+                <h3 class="country__name">United States of America</h3>
+                <dl class="country__details">
+                  <div class="country__details-box">
+                    <dt>Population:  </dt>
+                    <dd> 81,770,900</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Region:  </dt>
+                    <dd>Europe</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Capital:  </dt>
+                    <dd>Berlin</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+
+          <li class="countries__item col-sm-6 col-md-6 col-xl-3 col-lg-3 mb-4">
+            <div class="country shadow-sm">
+              <a class="country__link" href="brazil.html">
+                <img class="country__img" src="img/flag-brazil.png" width="264" height="160" alt="flag country">
+              </a>
+              <div class="country__inner">
+                <h3 class="country__name">Brazil</h3>
+                <dl class="country__details">
+                  <div class="country__details-box">
+                    <dt>Population: </dt>
+                    <dd> 81,770,900</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Region: </dt>
+                    <dd>Europe</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Capital: </dt>
+                    <dd>Berlin</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+
+          <li class="countries__item col-sm-6 col-md-6 col-xl-3 col-lg-3 mb-4">
+            <div class="country shadow-sm">
+              <a class="country__link" href="island.html">
+                <img class="country__img" src="img/flag-island.png" width="264" height="160" alt="flag country">
+              </a>
+              <div class="country__inner">
+                <h3 class="country__name">Island</h3>
+                <dl class="country__details">
+                  <div class="country__details-box">
+                    <dt>Population: </dt>
+                    <dd> 81,770,900</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Region: </dt>
+                    <dd>Europe</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Capital: </dt>
+                    <dd>Berlin</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+
+          <li class="countries__item col-sm-6 col-md-6 col-xl-3 col-lg-3 mb-4">
+            <div class="country  position-relative shadow-sm">
+              <a class="country__link  stretched-link" href="afgan.html">
+                <img class="country__img" src="img/flag-afganistan.png" width="264" height="160" alt="flag country">
+              </a>
+              <div class="country__inner">
+                <h3 class="country__name">Afghanistan</h3>
+                <dl class="country__details">
+                  <div class="country__details-box">
+                    <dt>Population:  </dt>
+                    <dd> 81,770,900</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Region:  </dt>
+                    <dd>Europe</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Capital:  </dt>
+                    <dd>Berlin</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+
+          <li class="countries__item col-sm-6 col-md-6 col-xl-3 col-lg-3 mb-4">
+            <div class="country shadow-sm">
+              <a class="country__link" href="yellow-island.html">
+                <img class="country__img" src="img/yellow-island.png" width="264" height="160" alt="flag country">
+              </a>
+              <div class="country__inner">
+                <h3 class="country__name">Aland Islands</h3>
+                <dl class="country__details">
+                  <div class="country__details-box">
+                    <dt>Population:  </dt>
+                    <dd> 81,770,900</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Region:  </dt>
+                    <dd>Europe</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Capital:  </dt>
+                    <dd>Berlin</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+
+          <li class="countries__item col-sm-6 col-md-6 col-xl-3 col-lg-3 mb-4">
+            <div class="country shadow-sm">
+              <a class="country__link" href="albania.html">
+                <img class="country__img" src="img/albania.png" width="264" height="160" alt="flag country">
+              </a>
+              <div class="country__inner">
+                <h3 class="country__name">Albania</h3>
+                <dl class="country__details">
+                  <div class="country__details-box">
+                    <dt>Population: </dt>
+                    <dd> 81,770,900</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Region: </dt>
+                    <dd>Europe</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Capital: </dt>
+                    <dd>Berlin</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+
+          <li class="countries__item col-sm-6 col-md-6 col-xl-3 col-lg-3 mb-4">
+            <div class="country shadow-sm">
+              <a class="country__link" href="izrael.html">
+                <img class="country__img" src="img/izrael.png" width="264" height="160" alt="flag country">
+              </a>
+              <div class="country__inner">
+                <h3 class="country__name">Algeria</h3>
+                <dl class="country__details">
+                  <div class="country__details-box">
+                    <dt>Population: </dt>
+                    <dd> 81,770,900</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Region: </dt>
+                    <dd>Europe</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Capital: </dt>
+                    <dd>Berlin</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer mt-auto">
+
+  </footer>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

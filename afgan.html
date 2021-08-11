@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="body d-flex flex-column h-100">
+
+  <header class="site-header py-3 shadow-sm">
+    <div class="container-lg container-made d-flex justify-content-between align-items-center">
+      <a class="site-header__logo font-weight-bold" href="index.html">Where in the world?</a>
+      <button class="site-header__toggler" type="button">
+        <span class="site-header__toggler-wrapper d-flex align-items-center">
+          <svg width="18" height="17" viewBox="0 0 18 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12.5532 11.815C8.66857 11.815 5.51929 8.92783 5.51929 5.36821C5.51929 4.0253 5.96679 2.78158 6.73143 1.75C3.69036 2.69515 1.5 5.33122 1.5 8.43807C1.5 12.3385 4.94929 15.5 9.20357 15.5C12.5929 15.5 15.4696 13.4932 16.5 10.7045C15.375 11.4048 14.0161 11.815 12.5532 11.815Z"
+              stroke="#111517" stroke-width="1.25" />
+          </svg>
+
+          <span class="site-header__toggler-text">Dark mode</span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main class="site-content flex-grow-1 py-4 ">
+    <div class="container-made container-lg">
+      <div class="back mb-5">
+        <h1 class="sr-only">Info country</h1>
+
+        <a class="back__link" href="index.html">
+          <span class="back__link-svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <g id="call-made">
+                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.46447 4.10744L7.64298 5.28596L3.75389 9.17504L18.6031 9.17504L18.6031 10.825L3.75389 10.825L7.64298 14.714L6.46447 15.8926L0.57191 10L6.46447 4.10744Z" />
+              </g>
+            </svg>
+
+          </span>
+          Back
+        </a>
+      </div>
+
+      <section class="info-country">
+        <h2 class="sr-only">Info country</h2>
+        <div class="info-country__inner row d-flex flex-wrap">
+          <div class="col-sm-12 col-lg-6">
+            <img class="rounded info-country__img" src="img/flag-afganistan.png" width="560" height="400"
+              alt="image of country">
+          </div>
+
+          <div class="col-sm-12 col-lg-6">
+            <div class="info-country__content p-4 md-p-2">
+              <h3 class="info-country__name mb-3">Aganistan</h3>
+              <div class="info-country__details d-flex flex-wrap justify-content-between">
+                <dl class="country__details">
+                  <div class="country__details-box">
+                    <dt>Native Name:</dt>
+                    <dd>België</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Population: </dt>
+                    <dd>11,319,511</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Region:</dt>
+                    <dd>Europe</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Sub Region: </dt>
+                    <dd>Western Europe</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Capital:</dt>
+                    <dd>Brussels</dd>
+                  </div>
+                </dl>
+
+                <dl class="country__details">
+                  <div class="country__details-box">
+                    <dt>Top Level Domain: </dt>
+                    <dd>be</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Currencies:</dt>
+                    <dd>Euro</dd>
+                  </div>
+                  <div class="country__details-box">
+                    <dt>Languages: </dt>
+                    <dd>Dutch, French, German</dd>
+                  </div>
+                </dl>
+
+              </div>
+              <div class="info-country__bordered d-flex align-items-center flex-wrap">
+                Border Countries:
+                <ul class="info-country__bordered-list list-unstyled d-flex flex-wrap ">
+                  <li class="info-country__bordered-item ml-lg-2 mr-2">France</li>
+                  <li class="info-country__bordered-item mr-2">Germany</li>
+                  <li class="info-country__bordered-item">Netherlands</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <footer class="site-footer mt-auto">
+
+  </footer>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
