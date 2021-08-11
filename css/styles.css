@@ -153,14 +153,14 @@ span{
 }
 
  .country:hover{
-  box-shadow: ;
 }
 
 .country__img {
   max-width: 100%;
   width: 100%;
   object-fit: cover;
-  height: auto;
+  /* height: auto; */
+  /* aspect-ratio: 4 / 3; */
 }
 
 
